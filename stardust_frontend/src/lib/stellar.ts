@@ -124,6 +124,8 @@ export async function fractionalizeNft(nft: Nft, address: string, amount : strin
         .setTimeout(0)
         .build()
 
+    tx.sign(issuerKeypair)
+
     const signedTx = await signTx("testnet",tx.toXDR())
     return mintFracs(signedTx,nft,fracNft.issuer,fracNft.code)
 

@@ -10,10 +10,22 @@
   height: 100vh;
 }
 
+a{
+  text-decoration: none !important;
+}
+
+.create{
+  width: 66%;
+}
 
 .Mint{
   margin: auto;
   width: 20em;
+}
+
+.Proposals{
+  margin: auto;
+  width: 66%;
 }
 
 .AlbedoRight{
