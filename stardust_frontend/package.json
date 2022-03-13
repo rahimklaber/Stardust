@@ -19,7 +19,7 @@
     "react-scripts": "4.0.3",
     "stellar-sdk": "^10.0.1",
     "typescript": "^4.6.2",
-    "web-vitals": "^2.1.4"
+    "ipfs-http-client": "^48.2.0"
   },
   "scripts": {
     "start": "react-scripts start",

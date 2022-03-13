@@ -1,0 +1,19 @@
+{
+  "id": "olfzyy98pgyy",
+  "domain": "silence.litemint.store",
+  "name": "UmV3YXJk",
+  "description": "VGhlIFJld2FyZCBpcyBJTiB0aGUgdW5sb2NrZWQgaW1hZ2U=",
+  "image": "ipfs://QmQ9xm2MizqVfVkGeZB7k2qV3L8VqHsiNJ9u5RGbEMsc6k",
+  "url": "https://ipfs.io/ipfs/QmQ9xm2MizqVfVkGeZB7k2qV3L8VqHsiNJ9u5RGbEMsc6k",
+  "tokens": [
+    {
+      "code": "EasilyPuzzld",
+      "issuer": "GAXAXWDHABSY4AKWBMQ44VZKH7V5TAFDWV4FYZQXCQ6VI7IEW3MLAYKZ",
+      "quantity": "0.0000001"
+    }
+  ],
+  "contentcids": [
+    "QmU9MZyNLJDmieuUoPGg5k2Z5fFams5iStemuewowt143B"
+  ],
+  "extref": "EasilyPuzzld-GAXAXWDHABSY4AKWBMQ44VZKH7V5TAFDWV4FYZQXCQ6VI7IEW3MLAYKZ"
+}

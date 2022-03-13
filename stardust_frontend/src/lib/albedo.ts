@@ -22,3 +22,12 @@ export async function signMessageWithAlbedo(address: string, data: string): Prom
 
     return albedoResponse.message_signature
 }
+
+
+export async function signTx(network : string,xdr:string){
+    const response = await albedo.tx({
+        xdr,
+        network
+    })
+    return response.signed_envelope_xdr
+}

@@ -11,17 +11,19 @@ export class StellarService {
         if (this.keypair != null) {
             return this.keypair
         }
-        const secret = await keyStore.get("master").catch(() => null)
+        const secret = await keyStore.get("master").then((res)=>res.secret).catch(() => null)
+        console.log(secret)
         if (secret == null) {
             this.keypair = Keypair.random()
+            console.log(`funding account ${this.keypair.publicKey()}`)
+            await this.server.friendbot(this.keypair.publicKey()).call().then(() => {
+                console.log("account funded.")
+                keyStore.put("master", {secret: this.keypair.secret()})
+            })
         } else {
             this.keypair = Keypair.fromSecret(secret)
         }
-        console.log(`funding account ${this.keypair.publicKey()}`)
-        await this.server.friendbot(this.keypair.publicKey()).call().then(() => {
-            console.log("account funded.")
-        })
-        await keyStore.put("master", {secret: this.keypair.publicKey()})
+
         return this.keypair
     }
 }
